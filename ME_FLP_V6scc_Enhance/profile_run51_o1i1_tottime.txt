@@ -1,0 +1,48 @@
+         1734797 function calls (1683332 primitive calls) in 78.878 seconds
+
+   Ordered by: internal time
+   List reduced from 242 to 40 due to restriction <40>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+160634/109285   15.704    0.000   31.519    0.000 {built-in method numpy.core._multiarray_umath.implement_array_function}
+    66140   13.176    0.000   13.176    0.000 {method 'reshape' of 'numpy.ndarray' objects}
+    32953   10.975    0.000   10.975    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+      171    7.588    0.044   19.241    0.113 {scipy.interpolate._rgi_cython.find_indices}
+      171    6.726    0.039   45.616    0.267 _rgi.py:516(interpn)
+      171    6.462    0.038   16.117    0.094 _rgi.py:364(_prepare_xi)
+        1    5.497    5.497   78.881   78.881 solver.py:107(run_model)
+      171    3.451    0.020   64.748    0.379 core_functions.py:107(ii_fhat)
+      171    3.112    0.018   38.556    0.225 _rgi.py:274(__call__)
+     9576    1.486    0.000    3.078    0.000 numeric.py:2359(within_tol)
+    19224    1.319    0.000    1.319    0.000 {built-in method builtins.abs}
+     9576    0.416    0.000    3.853    0.000 numeric.py:2278(isclose)
+     9576    0.335    0.000    2.095    0.000 diagnostics.py:69(resolve_multiple_maxima)
+    28728    0.296    0.000    0.419    0.000 arraysetops.py:323(_unique1d)
+     9576    0.251    0.000    5.733    0.001 core_functions.py:169(getmax)
+     1367    0.212    0.000    0.484    0.000 rho_one.py:31(solve_rho_one)
+     9576    0.166    0.000    0.166    0.000 {method 'nonzero' of 'numpy.ndarray' objects}
+    32953    0.110    0.000   11.157    0.000 fromnumeric.py:69(_wrapreduction)
+       60    0.108    0.002    0.108    0.002 core_functions.py:134(ufcn_yl)
+     2735    0.089    0.000    0.124    0.000 linalg.py:306(solve)
+    19152    0.062    0.000    0.062    0.000 {method 'argsort' of 'numpy.ndarray' objects}
+       57    0.056    0.001    0.056    0.001 core_functions.py:162(omega)
+    28728    0.055    0.000    0.499    0.000 arraysetops.py:138(unique)
+    19154    0.054    0.000    0.129    0.000 _ufunc_config.py:33(seterr)
+    19154    0.046    0.000    0.049    0.000 _ufunc_config.py:132(geterr)
+    13843    0.045    0.000    0.045    0.000 {method 'repeat' of 'numpy.ndarray' objects}
+    41082    0.043    0.000    0.043    0.000 {method 'astype' of 'numpy.ndarray' objects}
+    33651    0.039    0.000    0.039    0.000 {built-in method numpy.asarray}
+    19152    0.038    0.000    0.578    0.000 diagnostics.py:64(_unique_stable_indices)
+    21205    0.038    0.000    0.845    0.000 fromnumeric.py:2432(all)
+   119455    0.034    0.000    0.034    0.000 {built-in method numpy.asanyarray}
+    28728    0.032    0.000    0.569    0.000 <__array_function__ internals>:177(unique)
+     9576    0.028    0.000    0.062    0.000 {method 'all' of 'numpy.generic' objects}
+    21205    0.028    0.000    0.915    0.000 <__array_function__ internals>:177(all)
+    28728    0.027    0.000    0.027    0.000 {method 'flatten' of 'numpy.ndarray' objects}
+    19153    0.026    0.000    0.056    0.000 fromnumeric.py:878(sort)
+        1    0.026    0.026    0.546    0.546 mu_bounds.py:22(compute_mu_bounds)
+    29018    0.025    0.000    0.025    0.000 {built-in method numpy.empty}
+    32953    0.023    0.000    0.023    0.000 fromnumeric.py:70(<dictcomp>)
+     9670    0.023    0.000    0.397    0.000 fromnumeric.py:2703(amax)
+
+
