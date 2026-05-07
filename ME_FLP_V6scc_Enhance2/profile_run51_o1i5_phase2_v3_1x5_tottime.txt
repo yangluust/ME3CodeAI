@@ -1,0 +1,48 @@
+         2620811 function calls (2558877 primitive calls) in 48.967 seconds
+
+   Ordered by: internal time
+   List reduced from 247 to 40 due to restriction <40>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1   16.608   16.608   48.970   48.970 solver.py:107(run_model)
+      855   12.891    0.015   19.495    0.023 core_functions.py:173(ii_fhat_factored)
+     1710    6.569    0.004    6.569    0.004 {built-in method numpy.core._multiarray_umath.c_einsum}
+     3089    2.886    0.001    2.886    0.001 {method 'reduce' of 'numpy.ufunc' objects}
+      570    2.672    0.005    2.672    0.005 {method 'argmax' of 'numpy.ndarray' objects}
+   133951    2.411    0.000    2.411    0.000 {method 'reshape' of 'numpy.ndarray' objects}
+    28586    0.784    0.000    4.851    0.000 diagnostics.py:69(resolve_multiple_maxima)
+    85758    0.673    0.000    0.901    0.000 arraysetops.py:323(_unique1d)
+    29156    0.610    0.000    0.610    0.000 {method 'nonzero' of 'numpy.ndarray' objects}
+      300    0.543    0.002    0.544    0.002 core_functions.py:232(ufcn_yl)
+286082/224264    0.280    0.000   11.842    0.000 {built-in method numpy.core._multiarray_umath.implement_array_function}
+      285    0.246    0.001    0.246    0.001 core_functions.py:260(omega)
+     1371    0.200    0.000    0.466    0.000 rho_one.py:31(solve_rho_one)
+    85758    0.120    0.000    1.080    0.000 arraysetops.py:138(unique)
+    57172    0.093    0.000    1.272    0.000 diagnostics.py:64(_unique_stable_indices)
+    57172    0.089    0.000    0.089    0.000 {method 'argsort' of 'numpy.ndarray' objects}
+     2747    0.089    0.000    0.124    0.000 linalg.py:306(solve)
+    85758    0.079    0.000    1.252    0.000 <__array_function__ internals>:177(unique)
+    43168    0.068    0.000    0.068    0.000 {built-in method numpy.asarray}
+    85758    0.063    0.000    0.063    0.000 {method 'flatten' of 'numpy.ndarray' objects}
+    57173    0.062    0.000    0.131    0.000 fromnumeric.py:878(sort)
+    85761    0.047    0.000    0.047    0.000 {built-in method numpy.empty}
+    58592    0.047    0.000    0.047    0.000 {method 'copy' of 'numpy.ndarray' objects}
+    60532    0.046    0.000    0.046    0.000 {method 'astype' of 'numpy.ndarray' objects}
+    57173    0.046    0.000    0.220    0.000 <__array_function__ internals>:177(sort)
+    13903    0.045    0.000    0.045    0.000 {method 'repeat' of 'numpy.ndarray' objects}
+    29156    0.045    0.000    0.855    0.000 numeric.py:632(flatnonzero)
+    85759    0.039    0.000    0.039    0.000 {method 'sort' of 'numpy.ndarray' objects}
+    29156    0.036    0.000    0.065    0.000 fromnumeric.py:1781(ravel)
+    43717    0.036    0.000    3.385    0.000 fromnumeric.py:51(_wrapfunc)
+    85758    0.034    0.000    0.047    0.000 arraysetops.py:125(_unpack_tuple)
+   262100    0.034    0.000    0.034    0.000 {built-in method numpy.asanyarray}
+       43    0.030    0.001    0.046    0.001 core_functions.py:134(bilinear_axis_table)
+    29960    0.030    0.000    0.105    0.000 <__array_function__ internals>:177(concatenate)
+    29156    0.028    0.000    0.908    0.000 <__array_function__ internals>:177(flatnonzero)
+        1    0.027    0.027    0.524    0.524 mu_bounds.py:22(compute_mu_bounds)
+    29156    0.022    0.000    0.109    0.000 <__array_function__ internals>:177(ravel)
+    29156    0.021    0.000    0.702    0.000 <__array_function__ internals>:177(nonzero)
+       85    0.020    0.000    0.030    0.000 core_functions.py:41(npdf)
+    29156    0.019    0.000    0.659    0.000 fromnumeric.py:1892(nonzero)
+
+
