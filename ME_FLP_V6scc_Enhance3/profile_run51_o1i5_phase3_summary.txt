@@ -1,0 +1,14 @@
+package=ME_FLP_V6scc_Enhance3
+run_no=51
+out_loop_max=1
+in_loop_max=5
+n_squig=3
+n_rho=21
+n_delta=501
+n_eps=51
+n_mup=None
+go=1
+svopt=0
+elapsed_s=41.673086
+boundary_events=262
+multi_max_events=0

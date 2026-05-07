@@ -29,7 +29,7 @@ def main() -> None:
         "--package",
         type=str,
         default="ME_FLP_V6scc",
-        choices=("ME_FLP_V6scc", "ME_FLP_V6scc_Enhance", "ME_FLP_V6scc_Enhance2"),
+        choices=("ME_FLP_V6scc", "ME_FLP_V6scc_Enhance", "ME_FLP_V6scc_Enhance2", "ME_FLP_V6scc_Enhance3"),
         help="Which package to profile.",
     )
     p.add_argument(

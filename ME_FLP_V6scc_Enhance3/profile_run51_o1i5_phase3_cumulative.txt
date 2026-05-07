@@ -1,0 +1,48 @@
+         2449823 function calls (2439369 primitive calls) in 41.659 seconds
+
+   Ordered by: cumulative time
+   List reduced from 1785 to 40 due to restriction <40>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    6.530    6.530   41.665   41.665 solver.py:108(run_model)
+      855   14.126    0.017   20.806    0.024 core_functions.py:173(ii_fhat_factored)
+198615/194539    0.255    0.000    8.706    0.000 {built-in method numpy.core._multiarray_umath.implement_array_function}
+      286    6.992    0.024    6.994    0.024 jit_kernels.py:31(fused_argmax_tie)
+     1710    0.006    0.000    6.677    0.004 <__array_function__ internals>:177(einsum)
+     1710    0.005    0.000    6.652    0.004 einsumfunc.py:1009(einsum)
+     1710    6.648    0.004    6.648    0.004 {built-in method numpy.core._multiarray_umath.c_einsum}
+    28586    0.795    0.000    2.634    0.000 diagnostics.py:69(resolve_multiple_maxima)
+    28587    1.877    0.000    1.912    0.000 jit_kernels.py:107(collect_tied_F)
+    57172    0.091    0.000    1.312    0.000 diagnostics.py:64(_unique_stable_indices)
+    85758    0.081    0.000    1.298    0.000 <__array_function__ internals>:177(unique)
+    85758    0.128    0.000    1.121    0.000 arraysetops.py:138(unique)
+        1    0.048    0.048    1.098    1.098 mu_bounds.py:22(compute_mu_bounds)
+     1371    0.395    0.000    0.984    0.001 rho_one.py:31(solve_rho_one)
+    85758    0.701    0.000    0.933    0.000 arraysetops.py:323(_unique1d)
+        1    0.000    0.000    0.676    0.676 jit_kernels.py:143(warmup)
+        2    0.000    0.000    0.675    0.338 dispatcher.py:388(_compile_for_args)
+      300    0.563    0.002    0.564    0.002 core_functions.py:232(ufcn_yl)
+        2    0.000    0.000    0.507    0.254 dispatcher.py:915(compile)
+        2    0.000    0.000    0.507    0.253 caching.py:627(load_overload)
+    248/2    0.000    0.000    0.487    0.244 base.py:261(refresh)
+     2747    0.006    0.000    0.323    0.000 <__array_function__ internals>:177(solve)
+      248    0.003    0.000    0.316    0.001 cpu.py:60(load_additional_registries)
+     2747    0.238    0.000    0.307    0.000 linalg.py:306(solve)
+    82/46    0.001    0.000    0.299    0.006 <frozen importlib._bootstrap>:986(_find_and_load)
+    74/38    0.001    0.000    0.296    0.008 <frozen importlib._bootstrap>:956(_find_and_load_unlocked)
+4429/4235    0.005    0.000    0.295    0.000 <frozen importlib._bootstrap>:1017(_handle_fromlist)
+   123/38    0.000    0.000    0.279    0.007 <frozen importlib._bootstrap>:211(_call_with_frames_removed)
+    73/38    0.001    0.000    0.270    0.007 <frozen importlib._bootstrap>:650(_load_unlocked)
+    72/38    0.000    0.000    0.268    0.007 <frozen importlib._bootstrap_external>:777(exec_module)
+    49/32    0.000    0.000    0.261    0.008 {built-in method builtins.__import__}
+    57173    0.049    0.000    0.233    0.000 <__array_function__ internals>:177(sort)
+    84/38    0.003    0.000    0.215    0.006 {built-in method builtins.exec}
+    248/2    0.000    0.000    0.198    0.099 context.py:153(refresh)
+    76956    0.195    0.000    0.195    0.000 {method 'reshape' of 'numpy.ndarray' objects}
+    13903    0.027    0.000    0.181    0.000 <__array_function__ internals>:177(repeat)
+        2    0.000    0.000    0.168    0.084 dispatcher.py:281(_compilation_chain_init_hook)
+      250    0.000    0.000    0.168    0.001 entrypoints.py:23(init_all)
+        1    0.000    0.000    0.167    0.167 __init__.py:844(entry_points)
+      291    0.001    0.000    0.166    0.001 __init__.py:853(<genexpr>)
+
+

@@ -6,7 +6,7 @@ run finishes, runs the in-package parity check against the MATLAB
 reference at the user-supplied directory.
 
 `--package` selects which Python port to drive (Phase 1 = ME_FLP_V6scc_Enhance,
-Phase 2 = ME_FLP_V6scc_Enhance2).
+Phase 2 = ME_FLP_V6scc_Enhance2, Phase 3 = ME_FLP_V6scc_Enhance3).
 """
 
 from __future__ import annotations
@@ -34,7 +34,7 @@ def main() -> None:
         "--package",
         type=str,
         default="ME_FLP_V6scc_Enhance",
-        choices=("ME_FLP_V6scc_Enhance", "ME_FLP_V6scc_Enhance2"),
+        choices=("ME_FLP_V6scc_Enhance", "ME_FLP_V6scc_Enhance2", "ME_FLP_V6scc_Enhance3"),
         help="Which enhanced Python package to drive.",
     )
     p.add_argument(
