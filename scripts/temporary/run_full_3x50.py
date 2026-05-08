@@ -7,7 +7,7 @@ reference at the user-supplied directory.
 
 `--package` selects which Python port to drive (Phase 1 = ME_FLP_V6scc_Enhance,
 Phase 2 = ME_FLP_V6scc_Enhance2, Phase 3 = ME_FLP_V6scc_Enhance3,
-Phase 4 = ME_FLP_V6scc_Enhance4).
+Phase 4 = ME_FLP_V6scc_Enhance4, Phase 5 = ME_FLP_V6scc_Enhance5).
 """
 
 from __future__ import annotations
@@ -35,7 +35,7 @@ def main() -> None:
         "--package",
         type=str,
         default="ME_FLP_V6scc_Enhance",
-        choices=("ME_FLP_V6scc_Enhance", "ME_FLP_V6scc_Enhance2", "ME_FLP_V6scc_Enhance3", "ME_FLP_V6scc_Enhance4"),
+        choices=("ME_FLP_V6scc_Enhance", "ME_FLP_V6scc_Enhance2", "ME_FLP_V6scc_Enhance3", "ME_FLP_V6scc_Enhance4", "ME_FLP_V6scc_Enhance5"),
         help="Which enhanced Python package to drive.",
     )
     p.add_argument(
