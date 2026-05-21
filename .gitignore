@@ -5,8 +5,11 @@ __pycache__/
 *.prof
 Experiment_*.out
 ME_FLP_*/run*.log
+*.mat
+!MPE3W50.mat
+!stuff.mat
+!MPE3Zinfo.mat
 scripts/temporary/*.log
-scripts/temporary/*.mat
 scripts/temporary/*.png
 scripts/temporary/control_runs*/
 
