@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+
+# Generated profiling/run artifacts.
+*.prof
+Experiment_*.out
+ME_FLP_*/run*.log
+scripts/temporary/*.log
+scripts/temporary/*.mat
+scripts/temporary/*.png
+scripts/temporary/control_runs*/
+
+# Office lock files.
+~$*

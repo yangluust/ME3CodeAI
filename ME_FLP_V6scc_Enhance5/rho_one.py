@@ -68,10 +68,11 @@ def solve_rho_one(
     if endog_rho == 1:
         z1vec = z_dr[:, n_rho - 1].reshape(-1, 1)
     elif endog_rho == 0:
-        if z_dr.ndim == 3:
-            z1vec = np.asarray(z_dr[:, n_rho - 1, n_rho - 1], dtype=float).reshape(-1, 1)
-        else:
-            z1vec = np.asarray(z_dr[:, n_rho - 1], dtype=float).reshape(-1, 1)
+        if z_dr.ndim != 2:
+            raise ValueError(
+                f"solve_rho_one expects 2-D z_dr (n_squig, n_rho); got shape {z_dr.shape}"
+            )
+        z1vec = np.asarray(z_dr[:, n_rho - 1], dtype=float).reshape(-1, 1)
     elif endog_rho == -1:
         if z1vec_override is None:
             raise ValueError("z1vec_override is required when endog_rho == -1")

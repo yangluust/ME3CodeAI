@@ -35,7 +35,7 @@ def main() -> None:
         "--package",
         type=str,
         default="ME_FLP_V6scc_Enhance",
-        choices=("ME_FLP_V6scc_Enhance", "ME_FLP_V6scc_Enhance2", "ME_FLP_V6scc_Enhance3", "ME_FLP_V6scc_Enhance4", "ME_FLP_V6scc_Enhance5"),
+        choices=("ME_FLP_V6scc_Enhance", "ME_FLP_V6scc_Enhance2", "ME_FLP_V6scc_Enhance3", "ME_FLP_V6scc_Enhance4", "ME_FLP_V6scc_Enhance5", "ME_FLP_V7FixRhoscc_Enhance5"),
         help="Which enhanced Python package to drive.",
     )
     p.add_argument(
@@ -45,7 +45,22 @@ def main() -> None:
     )
     p.add_argument("--parity-out-loop", type=int, default=3)
     p.add_argument("--parity-in-loop", type=int, default=50)
+    p.add_argument(
+        "--override-ptkeep-mat-path",
+        type=Path,
+        default=None,
+        help="Path to a MATLAB MPE<o>W<i>.mat to import PTkeep from.",
+    )
+    p.add_argument("--override-ptkeep-out-loop", type=int, default=None)
+    p.add_argument("--override-ptkeep-in-loop", type=int, default=None)
     args = p.parse_args()
+    if args.override_ptkeep_mat_path is not None and (
+        args.override_ptkeep_out_loop is None or args.override_ptkeep_in_loop is None
+    ):
+        raise SystemExit(
+            "--override-ptkeep-mat-path requires --override-ptkeep-out-loop and "
+            "--override-ptkeep-in-loop"
+        )
 
     config_mod = importlib.import_module(f"{args.package}.config")
     parity_mod = importlib.import_module(f"{args.package}.parity_check")
@@ -64,7 +79,19 @@ def main() -> None:
         f"out_loop_max={cfg.out_loop_max} in_loop_max={cfg.in_loop_max} svopt={cfg.svopt}"
     )
 
-    options = SolverOptions(make_plots=False, output_root=args.output_root, workbook_path=args.workbook)
+    options_kw = dict(make_plots=False, output_root=args.output_root, workbook_path=args.workbook)
+    if args.override_ptkeep_mat_path is not None:
+        options_kw.update(
+            override_ptkeep_mat_path=args.override_ptkeep_mat_path,
+            override_ptkeep_out_loop=int(args.override_ptkeep_out_loop),
+            override_ptkeep_in_loop=int(args.override_ptkeep_in_loop),
+        )
+        print(
+            f"[driver] override PTkeep at out_loop="
+            f"{args.override_ptkeep_out_loop} in_loop={args.override_ptkeep_in_loop} "
+            f"from {args.override_ptkeep_mat_path}"
+        )
+    options = SolverOptions(**options_kw)
 
     t0 = time.perf_counter()
     res = run_model(cfg, options)
