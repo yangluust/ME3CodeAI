@@ -12,6 +12,8 @@ ME_FLP_*/run*.log
 scripts/temporary/*.log
 scripts/temporary/*.png
 scripts/temporary/control_runs*/
+outputs/
+output/
 
 # Office lock files.
 ~$*
