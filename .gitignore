@@ -25,6 +25,12 @@ scripts/temporary/*.png
 !scripts/temporary/run69_squig1_mu_ss_a_alpha_delta_vs_rho_single_row.png
 !scripts/temporary/run70_squig1_mu_ss_a_alpha_delta_vs_rho_single_row.png
 !scripts/temporary/run70_squig2_mu_ss_a_alpha_delta_vs_rho_single_row.png
+!scripts/temporary/run71_squig1_mu_ss_a_alpha_delta_vs_rho_single_row.png
+!scripts/temporary/run71_squig2_mu_ss_a_alpha_delta_vs_rho_single_row.png
+!scripts/temporary/run72_squig1_mu_ss_a_alpha_delta_vs_rho_single_row.png
+!scripts/temporary/run72_squig2_mu_ss_a_alpha_delta_vs_rho_single_row.png
+!scripts/temporary/run73_squig1_mu_ss_a_alpha_delta_vs_rho_single_row.png
+!scripts/temporary/run73_squig2_mu_ss_a_alpha_delta_vs_rho_single_row.png
 scripts/temporary/control_runs*/
 outputs/
 output/
